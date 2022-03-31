@@ -44,7 +44,7 @@ app.post(config.webhookPath, (req, res) => {
 		message += getMentionFromId(match);
 	}
 
-	message += `You have been mentioned by ${article.from} in Ticket ${config.url}${ticket.id}`;
+	message += `You have been mentioned by ${article.from.trim()} in Ticket ${config.url}${ticket.id}`;
 
 	console.log(message);
 
