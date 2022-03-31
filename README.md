@@ -2,6 +2,16 @@
 
 Simple webhook tranformation tool for zammad to provide Discord user pings for Zammad mentions via Discord webhooks.
 
+## Requirements
+
+- node
+
+## Installing & running
+
+- Run `npm install`
+- Setup `config.json` as described below
+- Setup a script or service to run `node index.js` in this working directory
+
 ## Configuration
 
 Copy `config-template.json` to `config.json` and set up the required values for your use case.
@@ -17,4 +27,4 @@ The name field in the config is used as a fallback if no ID is provided.
 ## Zammad configuration
 
 - Create a new webhook pointing to your configured hostname, port and webhook path.
-- Then create a trigger with the condition that the Text contains `data-mention-user-id` & uses the webhook as the action.
+- Then create a trigger with the condition that the `Text` contains `data-mention-user-id` & uses the webhook as the action.
