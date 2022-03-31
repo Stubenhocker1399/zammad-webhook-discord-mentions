@@ -1,0 +1,17 @@
+{
+  "name": "zammad-webhook-discord-mentions",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Receives zammad webhooks to send of a Discord webhook to ping agents.",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stubenhocker1399",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "node-fetch": "^3.2.3"
+  }
+}

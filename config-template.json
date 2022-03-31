@@ -1,0 +1,12 @@
+{
+	"port": 8190,
+	"hostname": "127.0.0.1",
+	"webhookPath":"/webhookzammaddiscord",
+	"url": "http://192.168.1.1/#ticket/zoom/",
+	"discordWebhook": "https://discord.com/api/webhooks/<LONG STRING>/<LONG STRING>",
+	"users": [
+		{ "id": "3", "name": "Admin User", "discordId": "<LONG NUMBER>" },
+		{ "id": "4", "name": "First Agent", "discordId": "<LONG NUMBER>" },
+		{ "id": "4", "name": "Agent without DiscordID" }
+	]
+}
