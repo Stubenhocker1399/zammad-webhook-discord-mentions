@@ -28,3 +28,7 @@ The name field in the config is used as a fallback if no ID is provided.
 
 - Create a new webhook pointing to your configured hostname, port and webhook path.
 - Then create a trigger with the condition that the `Text` contains `data-mention-user-id` & uses the webhook as the action.
+
+## License
+
+This project is licensed under the terms of the MIT license.
