@@ -60,4 +60,4 @@ app.post(config.webhookPath, (req, res) => {
 	res.status(200).end();
 })
 
-app.listen(config.port, config.hostname, () => console.log(`Server listening for zammad webhooks on ${config.hostname}:${config.port}${config.webhookPath}`));
+app.listen(config.port, config.hostname, () => console.log(`Server listening for Zammad webhooks on ${config.hostname}:${config.port}${config.webhookPath}`));
