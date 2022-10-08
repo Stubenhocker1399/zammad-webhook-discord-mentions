@@ -46,6 +46,10 @@ app.post(config.webhookPath, (req, res) => {
 
 	message += `You have been mentioned by ${article.from.trim()} in Ticket ${config.url}${ticket.id}`;
 
+	if (config.includeTitle) {
+		message += ` "${ticket.title}"`
+	}
+
 	console.log(message);
 
 	fetch(config.discordWebhook, {
